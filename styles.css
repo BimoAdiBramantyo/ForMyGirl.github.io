@@ -128,15 +128,11 @@ body::-webkit-scrollbar {
 }
 
 .photo-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    justify-content: center;
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; /* Centers the grid */
+    align-items: center; /* Centers vertically (if needed) */
 }
-
 .photos {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
