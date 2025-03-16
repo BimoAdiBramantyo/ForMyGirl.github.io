@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Girl ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="flower flower-left"></div>
+    <div class="flower flower-right"></div>
+
+    <audio id="bg-music" loop>
+        <source src="audio/Bruno Major - Regent's Park (Official Audio).mp3" type="audio/mp3">
+    </audio>
+    
+    <button class="music-btn" onclick="toggleMusic()">🎶 Play Music</button>
+
+    <div class="container">
+        <h1 class="title">💖 My Favorite Girl 💖</h1>
+        
+        <div class="love-letter">
+            <p>My dearest love,</p>
+            <p>Every moment with you is a dream come true. You are my happiness, my heart, and my soul. I love you more than words can express. 💕</p>
+            <p>Forever yours. ❤️</p>
+        </div>
+        
+        <button class="love-btn" onclick="showLoveMessage()">💌 Read My Heart 💌</button>
+        
+        <div id="love-message" class="hidden">
+            <p>You are my world, my light, and my greatest love. No matter what happens, my heart is always with you. 💖</p>
+        </div>
+
+        <h2>📸 Our Pics 📸</h2>
+
+        <div class="photo-gallery">
+            <div class="photos">
+                <img src="img/first.jpg" alt="Photo 1">
+                <img src="img/fifth.jpg" alt="Photo 2">
+                <img src="img/third.jpg" alt="Photo 3">
+                <img src="img/fourth.jpg" alt="Photo 4">
+                <img src="img/second.jpg" alt="Photo 5">
+                <img src="img/sixth.jpg" alt="Photo 6">
+            </div>
+        </div>
+    </div>
+    
+    <div class="flower flower-bottom-left"></div>
+    <div class="flower flower-bottom-right"></div>
+
+    <div class="video-container">
+        <h2>Secret Videos 🎥</h2>
+    
+        <!-- Password Input -->
+        <input type="password" id="videoPassword" placeholder="Enter password">
+        <button onclick="unlockVideos()">Unlock</button>
+    
+        <!-- Error Message -->
+        <p id="errorMessage" class="hidden error-text">Wrong password! Try again ❤️</p>
+    
+        <!-- Video Selection (Initially Hidden) -->
+        <div id="videoSelection" class="hidden">
+            <p>Select a video to watch:</p>
+            <button onclick="showVideo(1)">❤️</button>
+            <button onclick="showVideo(2)">🔞</button>
+        </div>
+    
+        <!-- Video Containers (Initially Hidden) -->
+        <div id="videoWrapper1" class="hidden">
+            <video controls>
+                <source src="video/first.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    
+        <p id="videoMessage" class="hidden">Nuh uh, there is no video so if you want to go straight to it 😉</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
